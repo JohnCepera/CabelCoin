@@ -7,7 +7,7 @@ import Image from "next/image";
  * ~1.26 — монета крупная, белое кольцо обрезано
  */
 const COIN_ZOOM = {
-  tap: 1.26,
+  tap: 1.24,
   preview: 1.2,
 } as const;
 
