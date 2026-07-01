@@ -22,7 +22,7 @@ export function TapButton({
 
   return (
     <div className="flex flex-col items-center">
-      <div className="relative flex h-48 w-48 items-center justify-center">
+      <div className="relative flex h-52 w-52 items-center justify-center">
         {pulse && (
           <span
             className={`tap-ring absolute inset-0 rounded-full ${visual.ringColor}`}
@@ -35,7 +35,7 @@ export function TapButton({
           aria-label={`Tap — ${visual.name}`}
         >
           {tapping ? (
-            <span className="flex h-44 w-44 items-center justify-center">
+            <span className="flex h-48 w-48 items-center justify-center">
               <span className="h-8 w-8 animate-spin rounded-full border-2 border-white border-t-transparent" />
             </span>
           ) : (
