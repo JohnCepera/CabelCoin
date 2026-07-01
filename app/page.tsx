@@ -7,7 +7,7 @@ import {
   isTelegramWebApp,
   type UserGameState,
 } from "@/lib/api-client";
-import Image from "next/image";
+import { CoinImage } from "@/components/CoinImage";
 import { TapButton } from "@/components/TapButton";
 import { DAILY_REWARD_AMOUNT, formatDuration } from "@/lib/game";
 import {
@@ -248,12 +248,10 @@ export default function HomePage() {
               </p>
               {nextVisual && nextVisualLevel !== null && (
                 <div className="mb-4 flex items-center gap-3 rounded-2xl bg-zinc-800/50 px-3 py-2">
-                  <Image
+                  <CoinImage
                     src={nextVisual.image}
                     alt={nextVisual.name}
-                    width={40}
-                    height={40}
-                    className="h-10 w-10 object-contain"
+                    size="preview"
                   />
                   <p className="text-xs text-zinc-400">
                     На ур. {nextVisualLevel} иконка сменится на{" "}
